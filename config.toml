@@ -1,0 +1,45 @@
+baseurl                  = "https://example.com"           # Your domain name
+languageCode             = "en-us"
+defaultContentLanguage   = "en"
+title                    = "Job"
+theme                    = "sam"
+pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
+pygmentsCodefences       = true
+# googleAnalytics        = ""                               # Tracking code, eg. "UA-111111111-1"
+canonifyURLs = true
+
+[params]
+    favicon              = "job.png"
+    homepage             = "main"                           # What to call the home page link, link will not be rendered if empty
+    footerText           = "I'm is Job and this is my website"
+
+# Metadata for Open Graph and Twitter
+    description          = "Job's Portfolio Website"               # Max 160 characters show in search results
+    images               = ["job.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
+    title                = "Hello, I’m Job and I build software."
+
+[[params.videoBackground.sources]]
+    source  = "/sample_video.mp4"
+    type    = "video/mp4"
+    poster  = "/background.png"
+[params.videoBackground]
+    overlay = "rgba(0, 0, 0, 0.75)" # optional
+
+[[params.mainMenu]]
+    link = "projects"
+    text = "<projects />"
+
+[[params.mainMenu]]
+    link = "contact"
+    text = "<contact />"
+
+[[params.mainMenu]]
+    link = "portfolio"
+    text = "<portfolio />"
+
+[[params.mainMenu]]
+    link = "about"
+    text = "<who is job? />"
+
+[imaging]
+    quality = 75
